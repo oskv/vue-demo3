@@ -33,10 +33,11 @@ const mutations = {
   },
 };
 
-export default new Vuex.Store({
+export default {
   state: stateObj,
   getters,
   mutations,
   actions,
-});
+  namespaced: true,
+};
 
