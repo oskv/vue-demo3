@@ -48,33 +48,32 @@
 </template>
 
 <script lang='ts'>
-//import routes from '../router'
-import Vue from "vue";
+import Vue from 'vue';
 
 export default Vue.extend({
-  data () {
+  data() {
     return {
       drawer: false,
       menuItems: [
-          { title: 'e-Detailers', icon: 'photo_library', href:'/' },
-          { title: 'Email Templates', icon: 'email', href:'/emails'},
-          { title: 'Call Flows', icon: 'image', href:'/'},
-          { title: 'Surveys', icon: 'help_outline', href:'/'},
-          { title: 'Microsites', icon: 'view_compact', href:'/'}
+          { title: 'e-Detailers', icon: 'photo_library', href: '/' },
+          { title: 'Email Templates', icon: 'email', href: '/emails' },
+          { title: 'Call Flows', icon: 'image', href: '/' },
+          { title: 'Surveys', icon: 'help_outline', href: '/' },
+          { title: 'Microsites', icon: 'view_compact', href: '/' },
         ],
       toolbarIcons: [
           { icon: 'build' },
           { icon: 'help' },
           { icon: 'notifications' },
-      ]
-    }
+      ],
+    };
   },
   methods: {
-    setLang (lang: string) {
+    setLang(lang: string) {
       this.$i18n.locale = lang;
-    }
+    },
   },
-  name: 'App'
+  name: 'App',
 });
 </script>
 

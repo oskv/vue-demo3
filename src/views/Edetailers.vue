@@ -26,17 +26,17 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   computed: mapGetters('presentations', {
-    items: 'getList'
+    items: 'getList',
   }),
-  created () {
-    this.$store.dispatch('presentations/getPresentations')
+  created() {
+    this.$store.dispatch('presentations/getPresentations');
   },
-  name: 'Edetailers'
-}
+  name: 'Edetailers',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
